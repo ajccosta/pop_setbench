@@ -2,8 +2,8 @@
 
 This repo contains the memory reclamation benchmark used for the experiments and techniques reported in the paper titled: "Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures" accepted in ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2025 (PPOPP 2025).
 
-zenodo DOI  : [10.5281/zenodo.10203082??????]
-zenodo link : [????https://zenodo.org/records/10203082?????????]
+zenodo DOI  : []
+zenodo link : []
 
 ### Data Structures
 - Trevor Brown's external (a,b) tree (ABT)
@@ -42,7 +42,7 @@ zenodo link : [????https://zenodo.org/records/10203082?????????]
 Users can add new data structures by following the existing data structures in directory: ds/
 Users can add new reclamation algorithms along the lines of exitising algorithms in directory: common/recordmgr
 
-> Credit: This repo was carved out of [setbench](https://gitlab.com/trbot86/setbench) of [Multicore Lab](https://mc.uwaterloo.ca/) to test and evaluate reclamation algorithms with neutralization based reclamation [PPOPP21(???? )].
+> Credit: This repo was carved out of [nbr_setbench_plus](https://gitlab.com/aajayssingh/nbr_setbench_plus) which in turn uses [setbench](https://gitlab.com/trbot86/setbench) of [Multicore Lab](https://mc.uwaterloo.ca/).
 
 ## 🏁 Getting Started with running the default benchmark in paper.
 
@@ -60,7 +60,7 @@ We tested the benchmark, compiled with C++14 and -O3 optimization, on Ubuntu 20.
   To check the version of docker on your machine use: 
 
     ``` ~$ docker -v```
-* First, download the artifact named pop_setbench.zip from the ppopp2025 artifact submission link (or at ?????).
+* First, download the artifact named pop_setbench.zip from the ppopp2025 artifact submission link.
 
 * Find docker image named pop_docker.tar.gz in pop_setbench/ directory. 
   And load the downloaded docker image with the following command.
@@ -80,7 +80,7 @@ If this succeeds you can move to the quick test section and skip the following s
 # *Alternative Way:* Preparing Host Machine:
 In case you may want to prepare the host machine itself to run the artifact locally follow these instructions.
 
-First, download the artifact named pop_setbench.zip from ppopp2025 artifact submission link (or at ?????).
+First, download the artifact named pop_setbench.zip from ppopp2025 artifact submission link.
 
 The artifact requires the following packages/softwares on your Linux machine to compile and run the artifact.
 
@@ -369,6 +369,9 @@ verify installation:
 
 ### enumerate docker containers
 ```~$ sudo docker container ls```
+
+### enumerate loaded images
+```~$ sudo docker images```
 
 ### Build Docker image
 ``` sudo docker build -t pop_setbench . ```
