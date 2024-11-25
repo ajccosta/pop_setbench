@@ -12,6 +12,7 @@ RUN apt update && apt install -y \
         python3-pip \
         time \
         zip \
+        bc \
         micro
 
 RUN apt update && apt install -y \

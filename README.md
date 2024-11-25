@@ -1,9 +1,9 @@
 # Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures
 
-This repo contains the memory reclamation benchmark used for the experiments and techniques reported in the paper titled: "Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures" accepted in ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2025 (PPOPP 2025).
+This repo named pop_setbench contains the memory reclamation benchmark used for the experiments and techniques reported in the paper titled: "Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures" accepted in ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2025 (PPOPP 2025).
 
-zenodo DOI  : []
-zenodo link : []
+zenodo DOI  : [ppopp2025 artifact submission link]
+zenodo link : [ppopp2025 artifact submission link]
 
 ### Data Structures
 - Trevor Brown's external (a,b) tree (ABT)
@@ -75,9 +75,10 @@ We tested the benchmark, compiled with C++14 and -O3 optimization, on Ubuntu 20.
 * run ls to see several files/folders of the artifact: Dockerfile README.md, common, ds, install.sh, lib, microbench, pop_experiments, tools. 
 
     ```~$ ls ```
+
 If this succeeds you can move to the quick test section and skip the following section which discusses alternative ways to prepare your machine to run the artifact.
 
-# *Alternative Way:* Preparing Host Machine:
+# (2) *Alternative Way:* Preparing Host Machine:
 In case you may want to prepare the host machine itself to run the artifact locally follow these instructions.
 
 First, download the artifact named pop_setbench.zip from ppopp2025 artifact submission link.
@@ -86,7 +87,7 @@ The artifact requires the following packages/softwares on your Linux machine to 
 
 ```
  Use your system's package manager to install:
- > build-essential dos2unix g++ libnuma-dev make numactl parallel python3 python3-pip time zip micro
+ > build-essential dos2unix g++ libnuma-dev make numactl parallel python3 python3-pip time zip micro bc
 ```
 
 ```
@@ -111,7 +112,7 @@ Use the following commands:
 ~$ sudo apt-get update
 
 ~$ sudo apt-get install -y build-essential dos2unix g++ libnuma-dev make numactl parallel \
- python3 python3-pip time zip
+ python3 python3-pip time zip bc
 
 ~$ pip3 install numpy matplotlib pandas seaborn ipython ipykernel jinja2 colorama
 ```
@@ -130,7 +131,7 @@ To quickly compile, run and see default results for throughput experiment follow
 
 * *step1*. Assuming you are currently in pop_setbench, execute the following command:
 
-    ```~$ cd pop_experiments```.
+    ```~$ cd pop_experiments```
 * *step2*. Run the following command: 
 
     ```~$ ./run.sh```
@@ -180,7 +181,7 @@ If completed successfully this should generate plots in pop_experiments/plots/ge
 ### Analyze generated figures:
 In case you chose to run the experiment on your system locally then you can simply find the figures in /pop_setbench/pop_experiments/plots/generated_plots/ directory and analyse them. Plots are in their own data structure specific sub folders.
 
-Otherwise if you are running inside The Docker container follow below steps to fetch figures: 
+Otherwise if you are running inside the Docker container follow the below steps to fetch figures: 
 
 To copy generated figures on your host machine copy the plots from the docker container to your host system by following these steps.
 
@@ -201,9 +202,9 @@ Now you can analyse the generated plots.
 
 * Similarly the plot for long running read operation experiments follows a naming convention: readthroughput-[data structure name]-u[x: means x% of inserts and x% of deletes and remaining lookups].png and corresponding memory usage plot follows the naming convention: maxretireListSz-[data structure name]-u[x: means x% of inserts and x% of deletes and remaining lookups].png. For example, a plot showing mem_usage of HML list with 50% inserts and 50% deletes is named as: maxretireListSz-hmlist-u50.
 
-## 🔧 Running the tests with configuration reported in submitted paper [full experiments takes ~15 hrs]:
+## 🔧 Running the tests with configuration reported in submitted paper [full experiments takes ~15-16 hrs]:
 
-### Throughput and memory consumption experiments (Figure 1,2 and 3 in paper):
+### Throughput and memory consumption experiments (Figure 1,2 and 3 in paper) [~13 hours]:
 To reproduce figures reported in the submitted version of the paper please change inputs as indicated below:
 
 Inside pop_experiments/inputs/normalExp/ change:
@@ -232,7 +233,7 @@ Now change the appropriate '.txt' file using micro text editor (or editor of you
 save your changes and repeat this process for other input files listed above.
 
 Next, repeat the following steps as done in the Quick test.
-### Evaluate throughput and memory consumption experiments (Figure 1,2 and 3 in paper):
+### Evaluate throughput and memory consumption experiments (Figure 1,2 and 3 in paper)[2.5 hours]:
 
 * *step1*. Assuming you are currently in pop_setbench, execute the following command:
 
@@ -276,11 +277,11 @@ If completed successfully this should generate plots in pop_experiments/plots/ge
 
 Once the above test completes the resultant figures could be found in pop_experiments/plots/generated_plots/. All plots follow the naming convention mentioned in the quick test section.
 
-For easy comparison of the generated plots, we have put the expected figures for this experiment in the pop_experiments/plots/expected_plots/ directory. Please copy this directory in the same way as we copied pop_experiments/plots/generated_plots
+For easy comparison of the generated plots, we have put the expected figures for this experiment in the pop_experiments/plots/expected_plots/ directory. 
 
-* Copy the generated plots from the pop_experiments/plots/expected_plots/ folder to your current directory.
+* Copy the plots from the pop_experiments/plots/ folder to your current directory.
 
-    ```~$ sudo docker cp pop:/pop_setbench/pop_experiments/plots/expected_plots/ .```
+    ```~$ sudo docker cp pop:/pop_setbench/pop_experiments/plots/ .```
 
 Now, you can analyse the generated plots and compare them with the expected plots assuming you have access to similar hardware.
 
@@ -321,10 +322,11 @@ run.sh will do the following:
   * Thread(s) per core  : 2
   * Core(s) per socket  : 24
   * Memory              : 377G
+* We tested the benchmark, compiled with C++14 and -O3 optimization, on Ubuntu 20.04 (kernel 5.8.0-55) using numactl –interleave=all and the mimalloc allocator.
 
 ## 🎉 Claims from the paper supported by the artifact:
 
-Proposed PoP algorithms: HazardPtrPOP, HAzardEraPOP and EpochPOP.
+Proposed PoP algorithms: HazardPtrPOP, HazardEraPOP and EpochPOP.
 
 - *claim 1*. For write-heavy work-loads shown in Figure 1 and Figure 2 (in paper), publish-on-ping (POP) algorithms consistently perform better or are similar and exhibit a lower memory footprint compared to the original algorithms on which they are based.
   - please check throughput and max retire list size (mmeory consumption) plots for 100% updates (50%inserts/50%deletes, files with "u50" in name) in directory pubonping_smr/pop_experiments/plots/generated_plots. 
