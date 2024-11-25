@@ -44,7 +44,7 @@ Users can add new reclamation algorithms along the lines of exitising algorithms
 
 > Credit: This repo was carved out of [nbr_setbench_plus](https://gitlab.com/aajayssingh/nbr_setbench_plus) which in turn uses [setbench](https://gitlab.com/trbot86/setbench) of [Multicore Lab](https://mc.uwaterloo.ca/).
 
-## 🏁 Getting Started with running the default benchmark in paper.
+## Getting Started with running the default benchmark in paper.
 
 These instructions will get you a copy of the artifact up and running on your machine for development and testing purposes. This can be done in two ways: 
 1. use our docker provided image or
@@ -87,7 +87,8 @@ The artifact requires the following packages/softwares on your Linux machine to 
 
 ```
  Use your system's package manager to install:
- > build-essential dos2unix g++ libnuma-dev make numactl parallel python3 python3-pip time zip micro bc
+ > build-essential dos2unix g++ libnuma-dev make numactl parallel python3 python3-pip 
+ time zip micro bc
 ```
 
 ```
@@ -111,15 +112,15 @@ Use the following commands:
 
 ~$ sudo apt-get update
 
-~$ sudo apt-get install -y build-essential dos2unix g++ libnuma-dev make numactl parallel \
- python3 python3-pip time zip bc
+~$ sudo apt-get install -y build-essential dos2unix g++ libnuma-dev make numactl \
+ parallel python3 python3-pip time zip bc
 
 ~$ pip3 install numpy matplotlib pandas seaborn ipython ipykernel jinja2 colorama
 ```
 
 Once the required software/packages are installed we are ready to run the experiments and generate the figures discussed in  the submitted version of the paper.
 
-## 🔧 Quick Test [Takes upto ~10 minutes]
+## Quick Test [Takes upto ~10 minutes]
 Until now, we have prepared the setup needed to compile and run the artifact. Now, let's do a quick test where we will compile, run and generate results to verify that the experiments (described later) would work correctly.
 
 We would run two types of experiments. First, experiment to evaluate throughput and memory consumption (Figure 1, 2 and 3 in the paper) and second experiment to evaluate long running reads (Figure 4 in the paper)
@@ -136,7 +137,8 @@ To quickly compile, run and see default results for throughput experiment follow
 
     ```~$ ./run.sh```
 
-If completed successfully this should generate plots in /pop_setbench/pop_experiments/plots/generated_plots/, where each subdirectory corresponds to a data structure. 
+If completed successfully this should generate plots in 
+pop_experiments/plots/generated_plots/, where each subdirectory corresponds to a data structure. 
 
 
 The Quick test uses the default inputs provided from files in pop_experiments/inputs/.
@@ -166,7 +168,9 @@ To quickly compile, run and see default results for long running read operations
 
   ```~$ ./run_longreadops.sh```
 
-If completed successfully this should generate plots in pop_experiments/plots/generated_plots/plot_data_hml_longops for HML data structure.
+If completed successfully this should generate plots in 
+plots/generated_plots/plot_data_hml_longops 
+for HML data structure.
 
 + For long running read operations experiment (similar to Figure 4 in paper) inputs are in folder pop_experiments/inputs/longrunreadExp: 
 
@@ -202,20 +206,29 @@ Now you can analyse the generated plots.
 
 * Similarly the plot for long running read operation experiments follows a naming convention: readthroughput-[data structure name]-u[x: means x% of inserts and x% of deletes and remaining lookups].png and corresponding memory usage plot follows the naming convention: maxretireListSz-[data structure name]-u[x: means x% of inserts and x% of deletes and remaining lookups].png. For example, a plot showing mem_usage of HML list with 50% inserts and 50% deletes is named as: maxretireListSz-hmlist-u50.
 
-## 🔧 Running the tests with configuration reported in submitted paper [full experiments takes ~15-16 hrs]:
+## Running the tests with configuration reported in submitted paper [full experiments takes ~15-16 hrs]:
 
 ### Throughput and memory consumption experiments (Figure 1,2 and 3 in paper) [~13 hours]:
 To reproduce figures reported in the submitted version of the paper please change inputs as indicated below:
 
 Inside pop_experiments/inputs/normalExp/ change:
 
-  * *reclaimer.txt*      : none,ibr_rcu,rcu_popplushp,ibr_popplushp,nbr_popplushe,ibr_hp,he,ibr_hpasyf,nbrplus,2geibr
+  * *reclaimer.txt*      :
+
+  none,ibr_rcu,rcu_popplushp,ibr_popplushp,nbr_popplushe,ibr_hp,he,ibr_hpasyf,nbrplus,2geibr
+
   * *steps.txt*          : 1,2,3
+
   * *threadsequence.txt* : 1,18,36,54,72,90,108,126,144,180,216,252,288
+
   * *workloadtype.txt*   : 5,50
+
   * *abtTreesize.txt*    : 20000000
+
   * *dgtTreesize.txt*    : 200000
+
   * *htsize.txt*         : 6000000
+
   * *listsize.txt*       : 2000
 
 
@@ -242,7 +255,8 @@ Next, repeat the following steps as done in the Quick test.
 
     ```~$ ./run.sh```
 
-If completed successfully this should generate plots in /pop_setbench/pop_experiments/plots/generated_plots/, where each subdirectory corresponds to a data structure. 
+If completed successfully this should generate plots in 
+/pop_experiments/plots/generated_plots/, where each subdirectory corresponds to a data structure. 
 
 For the figures in the submitted paper we tested POP algorithms on a NUMA machine with the following configuration:
 
@@ -259,7 +273,9 @@ Note: as long as the pop_setbench is run on a 144 thread machine with 4 NUMA nod
 
 + For long running read operations experiment (Figure 4 in paper) in folder pop_experiments/inputs/longrunreadExp: 
 
-  * *reclaimer.txt*      : none,ibr_rcu,rcu_popplushp,ibr_popplushp,nbr_popplushe,ibr_hp,he,ibr_hpasyf,nbrplus,2geibr
+  * *reclaimer.txt*      :
+
+  none,ibr_rcu,rcu_popplushp,ibr_popplushp,nbr_popplushe,ibr_hp,he,ibr_hpasyf,nbrplus,2geibr
   * *threads.txt*        : 144  # Note, just have one thread number at a time and NOT a sequence for this experiment.
   * *workloadtype.txt*   : 50
   * *listsize.txt*       : 10000,50000,100000,400000,800000
@@ -271,9 +287,11 @@ Note: as long as the pop_setbench is run on a 144 thread machine with 4 NUMA nod
     
     ```~$ ./run_longreadops.sh```
 
-If completed successfully this should generate plots in pop_experiments/plots/generated_plots/plot_data_hml_longops for HML data structure.
+If completed successfully this should generate plots in
+plots/generated_plots/plot_data_hml_longops 
+for HML data structure.
 
-### ⛏️ Analyze generated figures:
+### Analyze generated figures:
 
 Once the above test completes the resultant figures could be found in pop_experiments/plots/generated_plots/. All plots follow the naming convention mentioned in the quick test section.
 
@@ -286,7 +304,7 @@ For easy comparison of the generated plots, we have put the expected figures for
 Now, you can analyse the generated plots and compare them with the expected plots assuming you have access to similar hardware.
 
 
-## 🎉 What does run.sh do?
+## What does run.sh do?
 
 Inputs for experiments are provided from the following files:
 
@@ -306,7 +324,7 @@ run.sh will do the following:
 2. Run all reclamation algorithms (NBR+, EBR (RCU style implementation), IBR, Hazard Pointer (HP), HazardPtrPOP, HAzardEraPOP, EpochPOP, Hazard Eras (HE), HPAsym, None), for a sequence of threads (say, 1,18,36,54,72,90,108,126,144,180,216,252,288), for varying workloads (say, 50% inserts/50% deletes and 5% inserts/5% deletes/rest lookups) for LL, HML, HMLHT, DGT and ABT data structrues. One reclamation algorithm is run several times. Each run is called one step. For example, HazardPtrPOP executing with 18 threads for a workload type that has 50% inserts and 50% deletes is called one step in our experiments.
 3. Produce figures in directory pop_experiments/plots/generated_plots.
 
-## 🚀 Types of machines we evaluated pop_setbench on:
+## Types of machines we evaluated pop_setbench on:
 
 * Smallest NUMA machine we have tested POP algorithms has following configuration:
   * Architecture        : Intel x86_64
@@ -324,7 +342,7 @@ run.sh will do the following:
   * Memory              : 377G
 * We tested the benchmark, compiled with C++14 and -O3 optimization, on Ubuntu 20.04 (kernel 5.8.0-55) using numactl –interleave=all and the mimalloc allocator.
 
-## 🎉 Claims from the paper supported by the artifact:
+## Claims from the paper supported by the artifact:
 
 Proposed PoP algorithms: HazardPtrPOP, HazardEraPOP and EpochPOP.
 
@@ -339,7 +357,7 @@ Proposed PoP algorithms: HazardPtrPOP, HazardEraPOP and EpochPOP.
 
 These claims are for experiments on our 144 CPUs and 4 sockets machine with 188G memory.
 
-## ✍️ References
+## References
 1. https://gitlab.com/trbot86/setbench
 2. https://gitlab.com/aajayssingh/nbr_setbench
 3. David, T., Guerraoui, R., & Trigonakis, V. (2015). Asynchronized concurrency: The secret to scaling concurrent search data structures. ACM SIGARCH Computer Architecture News, 43(1), 631-644.
