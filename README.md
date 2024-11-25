@@ -52,6 +52,8 @@ These instructions will get you a copy of the artifact up and running on your ma
 
 ``` NOTE: To better reproduce results of POP we suggest to run pop_setbench on a multicore NUMA machine with at least two NUMA nodes.```
 
+We tested the benchmark, compiled with C++14 and -O3 optimization, on Ubuntu 20.04 (kernel 5.8.0-55) using numactl –interleave=all and the mimalloc allocator.
+
 # (1) Running on Docker
 * Install the latest version of Docker on your system. We tested the artifact with the Docker version 24.0.7, build 24.0.7-0ubuntu2~20.04.1. Instructions to install Docker may be found at https://docs.docker.com/engine/install/ubuntu/. Or you may refer to the "Installing Docker" section at the end of this README.
 
