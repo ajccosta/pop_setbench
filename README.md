@@ -319,9 +319,6 @@ run.sh will do the following:
   * Core(s) per socket  : 24
   * Memory              : 377G
 
-
-----AJ upto here-----
-
 ## 🎉 Claims from the paper supported by the artifact:
 
 Proposed PoP algorithms: HazardPtrPOP, HAzardEraPOP and EpochPOP.
