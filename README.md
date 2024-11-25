@@ -118,7 +118,7 @@ Use the following commands:
 
 Once the required software/packages are installed we are ready to run the experiments and generate the figures discussed in  the submitted version of the paper.
 
-## 🔧 Quick Test
+## 🔧 Quick Test [Takes upto ~10 minutes]
 Until now, we have prepared the setup needed to compile and run the artifact. Now, let's do a quick test where we will compile, run and generate results to verify that the experiments (described later) would work correctly.
 
 We would run two types of experiments. First, experiment to evaluate throughput and memory consumption (Figure 1, 2 and 3 in the paper) and second experiment to evaluate long running reads (Figure 4 in the paper)
@@ -145,13 +145,14 @@ Default content of the files is comma separated values with no space and no newl
 
 + For normal experiment (those similar to throughput and memory consumption plots in Figure 1, 2, and 3 in paper) inputs are in folder pop_experiments/inputs/normalExp:
 
-  * *reclaimer.txt*      : none,rcu_pophp,ibr_popplushp
+  * *reclaimer.txt*      : none,ibr_popplushp
   * *steps.txt*          : 1
-  * *threadsequence.txt* : 2,4,8
+  * *threadsequence.txt* : 2,4
   * *workloadtype.txt*   : 50
-  * *listsize.txt*       : 2000
-  * *abtTreesize.txt*    : 20000000
-  * *htsize.txt*         : 6000000
+  * *listsize.txt*       : 1000
+  * *abtTreesize.txt*    : 20000
+  * *dgtTreesize.txt*    : 20000
+  * *htsize.txt*         : 60000
 
 ### Evaluate long running read operations: 
 To quickly compile, run and see default results for long running read operations experiment follow these steps:
@@ -168,7 +169,7 @@ If completed successfully this should generate plots in pop_experiments/plots/ge
 
 + For long running read operations experiment (similar to Figure 4 in paper) inputs are in folder pop_experiments/inputs/longrunreadExp: 
 
-  * *reclaimer.txt*      : none,rcu_pophp,ibr_popplushp
+  * *reclaimer.txt*      : none,ibr_popplushp
   * *threads.txt*        : 8  # Note, just have one thread number at a time and NOT a sequence for this experiment.
   * *workloadtype.txt*   : 50
   * *listsize.txt*       : 2000,4000
@@ -200,7 +201,7 @@ Now you can analyse the generated plots.
 
 * Similarly the plot for long running read operation experiments follows a naming convention: readthroughput-[data structure name]-u[x: means x% of inserts and x% of deletes and remaining lookups].png and corresponding memory usage plot follows the naming convention: maxretireListSz-[data structure name]-u[x: means x% of inserts and x% of deletes and remaining lookups].png. For example, a plot showing mem_usage of HML list with 50% inserts and 50% deletes is named as: maxretireListSz-hmlist-u50.
 
-## 🔧 Running the tests with configuration reported in submitted paper [full experiments takes ~12 hrs]:
+## 🔧 Running the tests with configuration reported in submitted paper [full experiments takes ~15 hrs]:
 
 ### Throughput and memory consumption experiments (Figure 1,2 and 3 in paper):
 To reproduce figures reported in the submitted version of the paper please change inputs as indicated below:
@@ -212,7 +213,7 @@ Inside pop_experiments/inputs/normalExp/ change:
   * *threadsequence.txt* : 1,18,36,54,72,90,108,126,144,180,216,252,288
   * *workloadtype.txt*   : 5,50
   * *abtTreesize.txt*    : 20000000
-  * *dgtTreesize.txt*    : 2000000
+  * *dgtTreesize.txt*    : 200000
   * *htsize.txt*         : 6000000
   * *listsize.txt*       : 2000
 
@@ -328,10 +329,10 @@ Proposed PoP algorithms: HazardPtrPOP, HAzardEraPOP and EpochPOP.
 - *claim 1*. For write-heavy work-loads shown in Figure 1 and Figure 2 (in paper), publish-on-ping (POP) algorithms consistently perform better or are similar and exhibit a lower memory footprint compared to the original algorithms on which they are based.
   - please check throughput and max retire list size (mmeory consumption) plots for 100% updates (50%inserts/50%deletes, files with "u50" in name) in directory pubonping_smr/pop_experiments/plots/generated_plots. 
 
-- *claim 2*. In read-heavy workloads all POP algorithms are similar or, in some cases especially, at oversubscription marginally better than EBR and IBR, as shown in Figure 3 (in paper).
+- *claim 2*. In read-heavy workloads all POP algorithms are similar to their original counter parts. In some case of HMLHT especially, at oversubscription marginally better than EBR and IBR, as shown in Figure 3 (in paper).
   - please check throughput and max retire list size (mmeory consumption) plots for 10% updates (5%inserts/5%deletes/90%lookups, files with "u5" in name) in directory pubonping_smr/pop_experiments/plots/generated_plots. 
 
-- *claim 3*. The POP algorithms maintain high read throughput for long running read operations since they do not require read threads to restart when a thread reclaims memory, while also maintaining low memory consumption, unlike NBR+.
+- *claim 3*. The POP algorithms maintain high read throughput for long running read operations since they do not require read threads to restart when a thread reclaims memory, while also maintaining low memory consumption, unlike NBR+. (Figure 4 in paper).
   - please check long running read operations plots in pubonping_smr/pop_experiments/plots/generated_plots/plot_data_hml_longops
 
 These claims are for experiments on our 144 CPUs and 4 sockets machine with 188G memory.
@@ -366,6 +367,9 @@ verify installation:
 
 ## Misc:
 
+### enumerate docker containers
+```~$ sudo docker container ls```
+
 ### Build Docker image
 ``` sudo docker build -t pop_setbench . ```
 
@@ -373,4 +377,4 @@ verify installation:
 ``` sudo docker save pop_setbench:latest | gzip > pop_docker.tar.gz ```
 
 ### erase all docker containers in the system
-``` docker system prune -a ```
+``` sudo docker system prune -a ```

@@ -1,6 +1,12 @@
 #!/bin/sh
 ##this script runs compiles, runs and then produces nice figures using Setbenches tool framework for five  data structures: Brown’s (a,b)-tree (ABT), the external binary search tree by David, Guerraoui, and Trigonakis (DGT), the Harris-Michael list (HML), a lazy list (LL), and a hashtable (HMHT) based on HML.  
 
+# echo " "
+# echo "############################################"
+# echo "Cleaning old data..."
+# echo "############################################"
+# ./clean.sh
+
 echo " "
 echo "############################################"
 echo "Compiling data structures with reclaimers..."

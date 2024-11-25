@@ -51,7 +51,7 @@ def my_plot_func(filename, column_filters, data, series_name, x_name, y_name, ti
     #     assert 0, "number markers less than lines in my_plot_func"
     # else:
     for i, line in enumerate(ax.get_lines()):
-        print(line.get_label())
+        # print(line.get_label())
 
         if line.get_label() == "2geibr":
             line.set_label("IBR")
@@ -158,7 +158,7 @@ def my_memplot_func(filename, column_filters, data, series_name, x_name, y_name,
     ax.set_yscale('log')
 
     for i, line in enumerate(ax.get_lines()):
-        print(line.get_label())
+        # print(line.get_label())
 
         if line.get_label() == "2geibr":
             line.set_label("IBR")
