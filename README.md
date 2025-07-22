@@ -117,6 +117,14 @@ Use the following commands:
 
 ~$ pip3 install numpy matplotlib pandas seaborn ipython ipykernel jinja2 colorama
 ```
+##### Alternative 3 (manually):
+```
+Use the following commands: 
+
+~$ cd pop_setbench
+~$ source ./activate.sh #creates python virtual environment
+```
+
 
 Once the required software/packages are installed we are ready to run the experiments and generate the figures discussed in  the submitted version of the paper.
 

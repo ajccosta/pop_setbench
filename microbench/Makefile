@@ -51,9 +51,16 @@ else
     FLAGS += -O3
 endif
 
+# Check if CPU_FREQ is set
+ifeq ($(origin CPU_FREQ_GHZ), undefined)
+  $(error CPU_FREQ_GHZ not defined. Usage: make CPU_FREQ=XXXX)
+endif
+
+FLAGS += -DCPU_FREQ_GHZ=$(CPU_FREQ_GHZ)
+
 FLAGS += -DMAX_THREADS_POW2=512
 # FLAGS += -DCPU_FREQ_GHZ=2.1 #$(shell ./experiments/get_cpu_ghz.sh)
-FLAGS += -DCPU_FREQ_GHZ=$(shell ./experiments/get_cpu_ghz.sh)
+#FLAGS += -DCPU_FREQ_GHZ=$(shell ./experiments/get_cpu_ghz.sh)
 FLAGS += -DMEMORY_STATS=if\(1\) -DMEMORY_STATS2=if\(0\)
 FLAGS += -std=c++14 -g -mcx16 -fconcepts # to avoid auto in parameter declaration warning #-gdwarf
 # FLAGS += -DLLISTDS
