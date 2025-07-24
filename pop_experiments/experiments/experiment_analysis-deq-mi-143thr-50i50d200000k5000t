@@ -1,0 +1,748 @@
+deqalloc ubench_hmlist.alloc_new.reclaim_ibr_hpasyf.pool_none.td.out
+deqalloc 8329383
+deqalloc 7938912
+deqalloc 8036728
+deqalloc 8011254
+deqalloc 8278604
+mimalloc 7935515
+mimalloc 8076471
+mimalloc 8017279
+mimalloc 8027357
+mimalloc 8242905
+ubench_hmlist.alloc_new.reclaim_ibr_hpasyf_df.pool_none.out
+deqalloc 104767
+deqalloc 106199
+deqalloc 105563
+deqalloc 106329
+deqalloc 107480
+mimalloc 97855
+mimalloc 97763
+mimalloc 98134
+mimalloc 94176
+mimalloc 98969
+ubench_brown_ext_abtree_lf.alloc_new.reclaim_ibr_hp.pool_none.out
+deqalloc 38113434
+deqalloc 25599748
+deqalloc 22370942
+deqalloc 27803058
+deqalloc 30564903
+mimalloc 49092482
+mimalloc 49484648
+mimalloc 45829173
+mimalloc 50091006
+mimalloc 56514334
+ubench_brown_ext_abtree_lf.alloc_new.reclaim_ibr_hp.pool_none.out
+deqalloc 82306351
+deqalloc 80392286
+deqalloc 79986411
+deqalloc 80469108
+deqalloc 80969339
+mimalloc 58807644
+mimalloc 52468492
+mimalloc 55149796
+mimalloc 56090203
+mimalloc 49488680
+ubench_hm_hashtable.alloc_new.reclaim_rcu_pophp.pool_none.out
+deqalloc 158734328
+deqalloc 157408130
+deqalloc 160331311
+deqalloc 158185660
+deqalloc 156997077
+mimalloc 150301837
+mimalloc 153427027
+mimalloc 146738843
+mimalloc 147600182
+mimalloc 150698388
+ubench_herlihy_lazylist.alloc_new.reclaim_rcu_popplushp.pool_none.out
+deqalloc 136386
+deqalloc 135756
+deqalloc 137359
+deqalloc 136921
+deqalloc 136553
+mimalloc 123363
+mimalloc 102942
+mimalloc 123881
+mimalloc 96191
+mimalloc 123491
+ubench_hm_hashtable.alloc_new.reclaim_nbr_popplushe.pool_none.out
+deqalloc 165285773
+deqalloc 166090140
+deqalloc 166551006
+deqalloc 165748926
+deqalloc 166646519
+mimalloc 170299710
+mimalloc 176941214
+mimalloc 170714620
+mimalloc 175211462
+mimalloc 173193851
+ubench_hm_hashtable.alloc_new.reclaim_ibr_hpasyf_df.pool_none.out
+deqalloc 119223532
+deqalloc 118711499
+deqalloc 120224288
+deqalloc 119722013
+deqalloc 119800706
+mimalloc 110183079
+mimalloc 113989363
+mimalloc 110740809
+mimalloc 111649462
+mimalloc 111055479
+ubench_brown_ext_abtree_lf.alloc_new.reclaim_ibr_hpasyf_df.pool_none.out
+deqalloc 55791170
+deqalloc 56006977
+deqalloc 55730666
+deqalloc 55488191
+deqalloc 55836997
+mimalloc 34445458
+mimalloc 32633951
+mimalloc 35777368
+mimalloc 33090813
+mimalloc 37010618
+ubench_hmlist.alloc_new.reclaim_he.pool_none.out
+deqalloc 97437
+deqalloc 98248
+deqalloc 96639
+deqalloc 98357
+deqalloc 95652
+mimalloc 95135
+mimalloc 93544
+mimalloc 95575
+mimalloc 94842
+mimalloc 81543
+ubench_hmlist.alloc_new.reclaim_none_df.pool_none.out
+deqalloc 135089
+deqalloc 134967
+deqalloc 135262
+deqalloc 134562
+deqalloc 136331
+mimalloc 118800
+mimalloc 123820
+mimalloc 123943
+mimalloc 117713
+mimalloc 126960
+ubench_hm_hashtable.alloc_new.reclaim_none.pool_none.out
+deqalloc 287305661
+deqalloc 283855673
+deqalloc 197064090
+deqalloc 285212284
+deqalloc 237325972
+mimalloc 315473413
+mimalloc 310999085
+mimalloc 319563087
+mimalloc 316735138
+mimalloc 314109800
+ubench_hmlist.alloc_new.reclaim_nbrplus.pool_none.td.out
+deqalloc 11771046
+deqalloc 11677923
+deqalloc 11581926
+deqalloc 11553653
+deqalloc 11563448
+mimalloc 11418333
+mimalloc 11331473
+mimalloc 11418496
+mimalloc 11409589
+mimalloc 10985112
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_popplus2geibr.pool_none.out
+deqalloc 99693535
+deqalloc 97786446
+deqalloc 99767082
+deqalloc 100664866
+deqalloc 98735983
+mimalloc 90293182
+mimalloc 85549745
+mimalloc 79047527
+mimalloc 72497888
+mimalloc 87842708
+ubench_hmlist.alloc_new.reclaim_rcu_popplushp.pool_none.out
+deqalloc 120913
+deqalloc 120760
+deqalloc 120441
+deqalloc 121394
+deqalloc 122471
+mimalloc 86122
+mimalloc 109055
+mimalloc 108716
+mimalloc 108555
+mimalloc 108967
+ubench_hm_hashtable.alloc_new.reclaim_popplus2geibr.pool_none.out
+deqalloc 215127236
+deqalloc 210358633
+deqalloc 209494006
+deqalloc 211693912
+deqalloc 212868556
+mimalloc 190558906
+mimalloc 193246911
+mimalloc 184814200
+mimalloc 186440016
+mimalloc 180379205
+ubench_hmlist.alloc_new.reclaim_none.pool_none.td.out
+deqalloc 7977491
+deqalloc 8003763
+deqalloc 8054012
+deqalloc 7683252
+deqalloc 8102820
+mimalloc 8427353
+mimalloc 8144401
+mimalloc 8162691
+mimalloc 8019900
+mimalloc 8293414
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_ibr_hp.pool_none.out
+deqalloc 73828746
+deqalloc 73434558
+deqalloc 74178228
+deqalloc 73757467
+deqalloc 74108221
+mimalloc 67455457
+mimalloc 68751523
+mimalloc 67280954
+mimalloc 66618895
+mimalloc 68680874
+ubench_hm_hashtable.alloc_new.reclaim_2geibr.pool_none.out
+deqalloc 200178605
+deqalloc 199030984
+deqalloc 199588281
+deqalloc 201686233
+deqalloc 198309095
+mimalloc 191918347
+mimalloc 188452431
+mimalloc 192233640
+mimalloc 193385162
+mimalloc 189782155
+ubench_hmlist.alloc_new.reclaim_pop2geibr.pool_none.out
+deqalloc 130396
+deqalloc 130464
+deqalloc 130534
+deqalloc 130730
+deqalloc 130671
+mimalloc 121173
+mimalloc 121505
+mimalloc 122821
+mimalloc 116776
+mimalloc 120854
+ubench_herlihy_lazylist.alloc_new.reclaim_2geibr.pool_none.out
+deqalloc 137672
+deqalloc 133687
+deqalloc 127930
+deqalloc 131864
+deqalloc 142372
+mimalloc 125440
+mimalloc 116048
+mimalloc 106810
+mimalloc 126039
+mimalloc 88048
+ubench_herlihy_lazylist.alloc_new.reclaim_rcu_pophp.pool_none.out
+deqalloc 137867
+deqalloc 138891
+deqalloc 136534
+deqalloc 138594
+deqalloc 137922
+mimalloc 123830
+mimalloc 114902
+mimalloc 124515
+mimalloc 115851
+mimalloc 117219
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_rcu_popplushp.pool_none.out
+#deqalloc 
+deqalloc 111096692
+deqalloc 110910982
+#deqalloc 
+#deqalloc 
+mimalloc 100179258
+mimalloc 97108780
+mimalloc 96656141
+mimalloc 101335299
+mimalloc 99511949
+ubench_hmlist.alloc_new.reclaim_ibr_pophp.pool_none.td.out
+deqalloc 10685465
+deqalloc 10652417
+deqalloc 10670487
+deqalloc 10740901
+deqalloc 10708689
+mimalloc 10792478
+mimalloc 10723924
+mimalloc 10656661
+mimalloc 10675111
+mimalloc 10643725
+ubench_herlihy_lazylist.alloc_new.reclaim_ibr_rcu.pool_none.out
+deqalloc 145493
+deqalloc 145165
+deqalloc 145011
+deqalloc 135302
+deqalloc 146423
+mimalloc 127104
+mimalloc 120809
+mimalloc 119828
+mimalloc 124922
+mimalloc 126873
+ubench_herlihy_lazylist.alloc_new.reclaim_ibr_pophp.pool_none.out
+deqalloc 137169
+deqalloc 139785
+deqalloc 135709
+deqalloc 136519
+deqalloc 136790
+mimalloc 116398
+mimalloc 128606
+mimalloc 107522
+mimalloc 123883
+mimalloc 129609
+ubench_hmlist.alloc_new.reclaim_pop2geibr.pool_none.td.out
+deqalloc 10824263
+deqalloc 10795949
+deqalloc 10987613
+deqalloc 10826440
+deqalloc 9826823
+mimalloc 10638922
+mimalloc 10202513
+mimalloc 10798773
+mimalloc 10647007
+mimalloc 9875727
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_nbr.pool_none.out
+deqalloc 57635601
+deqalloc 63624189
+deqalloc 61553897
+deqalloc 58042360
+deqalloc 62069051
+mimalloc 55036985
+mimalloc 57451652
+mimalloc 56385578
+mimalloc 59643653
+mimalloc 58672270
+ubench_herlihy_lazylist.alloc_new.reclaim_nbr.pool_none.out
+deqalloc 143674
+deqalloc 143150
+deqalloc 144697
+deqalloc 146123
+deqalloc 142540
+mimalloc 94107
+mimalloc 98225
+mimalloc 98556
+mimalloc 94595
+mimalloc 97741
+ubench_herlihy_lazylist.alloc_new.reclaim_rcu_pop.pool_none.out
+deqalloc 145956
+deqalloc 145056
+deqalloc 145281
+deqalloc 144796
+deqalloc 144825
+mimalloc 120256
+mimalloc 119980
+mimalloc 98543
+mimalloc 126187
+mimalloc 120636
+ubench_hmlist.alloc_new.reclaim_nbr.pool_none.td.out
+deqalloc 10951462
+deqalloc 10963352
+deqalloc 11001679
+deqalloc 11004730
+deqalloc 10978369
+mimalloc 11012489
+mimalloc 10567444
+mimalloc 10518574
+mimalloc 10949595
+mimalloc 10550907
+ubench_hmlist.alloc_new.reclaim_ibr_hp_df.pool_none.out
+deqalloc 28627
+deqalloc 28815
+deqalloc 28653
+deqalloc 28482
+deqalloc 27654
+mimalloc 28662
+mimalloc 28413
+mimalloc 28702
+mimalloc 28533
+mimalloc 27046
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_rcu_pophp.pool_none.out
+deqalloc 112343762
+#deqalloc 
+deqalloc 113446570
+#deqalloc 
+#deqalloc 
+mimalloc 90536583
+mimalloc 95437031
+mimalloc 69845778
+mimalloc 95628243
+mimalloc 92941195
+ubench_hmlist.alloc_new.reclaim_he.pool_none.td.out
+deqalloc 10563603
+deqalloc 10622830
+deqalloc 10532861
+deqalloc 10487067
+deqalloc 10514621
+mimalloc 10436406
+mimalloc 10458630
+mimalloc 10350019
+mimalloc 10413978
+mimalloc 10402906
+ubench_herlihy_lazylist.alloc_new.reclaim_ibr_popplushp.pool_none.out
+deqalloc 138389
+deqalloc 139700
+deqalloc 139557
+deqalloc 138529
+deqalloc 139444
+mimalloc 117033
+mimalloc 123895
+mimalloc 124235
+mimalloc 122629
+mimalloc 123144
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_2geibr.pool_none.out
+deqalloc 96251803
+deqalloc 95861041
+deqalloc 96189681
+deqalloc 96238807
+deqalloc 96129895
+mimalloc 86880275
+mimalloc 77324758
+mimalloc 89019126
+mimalloc 92164437
+mimalloc 81997205
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_nbr_pophe.pool_none.out
+deqalloc 60655062
+deqalloc 62010282
+deqalloc 61898127
+deqalloc 61796395
+deqalloc 61805191
+mimalloc 54595473
+mimalloc 45519650
+mimalloc 55547453
+mimalloc 46434051
+mimalloc 55412292
+ubench_hmlist.alloc_new.reclaim_rcu_pophp.pool_none.out
+deqalloc 120697
+deqalloc 119128
+deqalloc 120539
+deqalloc 120967
+deqalloc 121693
+mimalloc 108571
+mimalloc 109125
+mimalloc 109288
+mimalloc 108132
+mimalloc 102353
+ubench_herlihy_lazylist.alloc_new.reclaim_pop2geibr.pool_none.out
+deqalloc 143060
+deqalloc 140561
+deqalloc 142123
+deqalloc 139894
+deqalloc 138248
+mimalloc 106713
+mimalloc 106519
+mimalloc 117540
+mimalloc 115971
+mimalloc 106505
+ubench_hmlist.alloc_new.reclaim_ibr_popplushp.pool_none.td.out
+deqalloc 10677733
+deqalloc 10783539
+deqalloc 10682413
+deqalloc 10774516
+deqalloc 10700491
+mimalloc 10465968
+mimalloc 10388331
+mimalloc 10383631
+mimalloc 10399671
+mimalloc 10326579
+ubench_hm_hashtable.alloc_new.reclaim_nbr_pophe.pool_none.out
+deqalloc 126195509
+deqalloc 123159584
+deqalloc 124186553
+deqalloc 126982641
+deqalloc 122138280
+mimalloc 133416293
+mimalloc 122017982
+mimalloc 119334402
+mimalloc 132492754
+mimalloc 122496771
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_ibr_hpasyf.pool_none.out
+deqalloc 63825384
+deqalloc 63327990
+deqalloc 63719825
+deqalloc 63132888
+deqalloc 63466950
+mimalloc 53665030
+mimalloc 56469465
+mimalloc 55513143
+mimalloc 56196469
+mimalloc 56140658
+ubench_hm_hashtable.alloc_new.reclaim_ibr_hpasyf.pool_none.out
+deqalloc 123135056
+deqalloc 123581134
+deqalloc 122104168
+deqalloc 122182184
+deqalloc 124383545
+mimalloc 117125534
+mimalloc 111015122
+mimalloc 116487172
+mimalloc 116572884
+mimalloc 116948200
+ubench_hmlist.alloc_new.reclaim_nbr_popplushe.pool_none.td.out
+deqalloc 10974031
+deqalloc 10917081
+deqalloc 10930839
+deqalloc 10948033
+deqalloc 10937117
+mimalloc 10783557
+mimalloc 10844805
+mimalloc 10850728
+mimalloc 10936816
+mimalloc 10735224
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_ibr_hp_df.pool_none.out
+deqalloc 74354417
+deqalloc 75117508
+deqalloc 73713346
+deqalloc 73338833
+deqalloc 75017754
+mimalloc 61698650
+mimalloc 68251170
+mimalloc 69026331
+mimalloc 70058394
+mimalloc 66858941
+ubench_hmlist.alloc_new.reclaim_ibr_pophp.pool_none.out
+deqalloc 120027
+deqalloc 120110
+deqalloc 120892
+deqalloc 120510
+deqalloc 120733
+mimalloc 86488
+mimalloc 108575
+mimalloc 102597
+mimalloc 108234
+mimalloc 109383
+ubench_herlihy_lazylist.alloc_new.reclaim_he.pool_none.out
+deqalloc 142351
+deqalloc 140890
+deqalloc 138856
+deqalloc 140448
+deqalloc 141051
+mimalloc 116713
+mimalloc 117429
+mimalloc 88926
+mimalloc 106899
+mimalloc 107041
+ubench_hm_hashtable.alloc_new.reclaim_nbr.pool_none.out
+deqalloc 125228142
+deqalloc 116932600
+deqalloc 113221650
+deqalloc 120464122
+deqalloc 116554008
+mimalloc 118554579
+mimalloc 113766416
+mimalloc 113306394
+mimalloc 115939837
+mimalloc 112939551
+ubench_brown_ext_abtree_lf.alloc_new.reclaim_rcu_popplushp.pool_none.out
+deqalloc 92541694
+#deqalloc 
+#deqalloc 
+#deqalloc 
+deqalloc 93524183
+mimalloc 48507354
+mimalloc 50709597
+mimalloc 61968413
+mimalloc 56613270
+mimalloc 47981439
+ubench_hmlist.alloc_new.reclaim_2geibr.pool_none.td.out
+deqalloc 11309059
+deqalloc 11282071
+deqalloc 11299123
+deqalloc 11349092
+deqalloc 11293675
+mimalloc 11148009
+mimalloc 11164420
+mimalloc 11154803
+mimalloc 11122794
+mimalloc 11127524
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_ibr_popplushp.pool_none.out
+deqalloc 103073865
+deqalloc 102834231
+deqalloc 101350123
+deqalloc 102154019
+deqalloc 103101987
+mimalloc 89125407
+mimalloc 89885514
+mimalloc 87326667
+mimalloc 89992609
+mimalloc 89017186
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_ibr_pophp.pool_none.out
+deqalloc 95595175
+deqalloc 96147848
+deqalloc 96779383
+deqalloc 94958427
+deqalloc 96322298
+mimalloc 81721523
+mimalloc 80766250
+mimalloc 78571420
+mimalloc 81063137
+mimalloc 80005019
+ubench_hm_hashtable.alloc_new.reclaim_ibr_hp.pool_none.out
+deqalloc 167192992
+deqalloc 166123437
+deqalloc 170699007
+deqalloc 167940208
+deqalloc 166394064
+mimalloc 161953850
+mimalloc 157539835
+mimalloc 162460829
+mimalloc 157919721
+mimalloc 158743609
+ubench_herlihy_lazylist.alloc_new.reclaim_popplus2geibr.pool_none.out
+deqalloc 141583
+deqalloc 138567
+deqalloc 141474
+deqalloc 142384
+deqalloc 141650
+mimalloc 88561
+mimalloc 117332
+mimalloc 107166
+mimalloc 106677
+mimalloc 106219
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_rcu_pop.pool_none.out
+deqalloc 89396912
+deqalloc 87281638
+deqalloc 87138038
+deqalloc 87517133
+deqalloc 88799245
+mimalloc 73030399
+mimalloc 77827176
+mimalloc 76743256
+mimalloc 73952742
+mimalloc 75949908
+ubench_hmlist.alloc_new.reclaim_rcu_popplushp.pool_none.td.out
+deqalloc 3314993
+deqalloc 3383680
+deqalloc 3278814
+deqalloc 3393955
+deqalloc 3387871
+mimalloc 5438707
+mimalloc 5469746
+mimalloc 5502902
+mimalloc 5973361
+mimalloc 4973709
+ubench_herlihy_lazylist.alloc_new.reclaim_nbrplus.pool_none.out
+deqalloc 146303
+deqalloc 145525
+deqalloc 145414
+deqalloc 145428
+deqalloc 144678
+mimalloc 125193
+mimalloc 96431
+mimalloc 123209
+mimalloc 94509
+mimalloc 104352
+ubench_herlihy_lazylist.alloc_new.reclaim_none.pool_none.out
+deqalloc 145068
+deqalloc 145736
+deqalloc 145465
+deqalloc 144833
+deqalloc 145560
+mimalloc 118718
+mimalloc 125676
+mimalloc 126334
+mimalloc 126498
+mimalloc 125509
+ubench_hmlist.alloc_new.reclaim_nbr_pophe.pool_none.td.out
+deqalloc 10706201
+deqalloc 10702067
+deqalloc 10677561
+deqalloc 10718810
+deqalloc 10722485
+mimalloc 10632753
+mimalloc 10598011
+mimalloc 10467669
+mimalloc 10559475
+mimalloc 10603942
+ubench_brown_ext_abtree_lf.alloc_new.reclaim_none.pool_none.out
+deqalloc 19187592
+deqalloc 19135265
+deqalloc 19018853
+deqalloc 18988146
+deqalloc 19227274
+mimalloc 105617866
+mimalloc 91461226
+mimalloc 102697760
+mimalloc 101883772
+mimalloc 103168051
+ubench_hmlist.alloc_new.reclaim_ibr_hp.pool_none.td.out
+deqalloc 6628356
+deqalloc 6573920
+deqalloc 6579072
+deqalloc 6606558
+deqalloc 6561013
+mimalloc 6499099
+mimalloc 6524982
+mimalloc 6497395
+mimalloc 6507163
+mimalloc 6472572
+ubench_hm_hashtable.alloc_new.reclaim_ibr_popplushp.pool_none.out
+deqalloc 217241273
+deqalloc 214917340
+deqalloc 215384374
+deqalloc 215110493
+deqalloc 215785094
+mimalloc 199618094
+mimalloc 201779559
+mimalloc 199728581
+mimalloc 200598424
+mimalloc 196836261
+ubench_guerraoui_ext_bst_ticket.alloc_new.reclaim_nbr_popplushe.pool_none.out
+deqalloc 83771623
+deqalloc 83148117
+deqalloc 83826946
+deqalloc 83534196
+deqalloc 83481025
+mimalloc 80450148
+mimalloc 80392586
+mimalloc 62122354
+mimalloc 79771560
+mimalloc 82045668
+ubench_hmlist.alloc_new.reclaim_2geibr.pool_none.out
+deqalloc 129173
+deqalloc 129006
+deqalloc 127635
+deqalloc 129809
+deqalloc 123860
+mimalloc 116102
+mimalloc 118871
+mimalloc 98364
+mimalloc 119179
+mimalloc 119854
+ubench_hmlist.alloc_new.reclaim_popplus2geibr.pool_none.td.out
+deqalloc 10999860
+deqalloc 11033899
+deqalloc 10979294
+deqalloc 10999669
+deqalloc 11024786
+mimalloc 10727536
+mimalloc 10720002
+mimalloc 10692743
+mimalloc 10171155
+mimalloc 10762636
+ubench_hm_hashtable.alloc_new.reclaim_ibr_pophp.pool_none.out
+deqalloc 191363577
+deqalloc 182482450
+deqalloc 188778348
+deqalloc 194599465
+deqalloc 191968686
+mimalloc 178569428
+mimalloc 170594412
+mimalloc 173792031
+mimalloc 174735330
+mimalloc 174381756
+ubench_hm_hashtable.alloc_new.reclaim_ibr_rcu.pool_none.out
+deqalloc 203996811
+deqalloc 204891989
+deqalloc 203429194
+deqalloc 203943763
+deqalloc 204526360
+mimalloc 196240030
+mimalloc 200175292
+mimalloc 198712401
+mimalloc 200372918
+mimalloc 188696417
+ubench_hm_hashtable.alloc_new.reclaim_rcu_popplushp.pool_none.out
+deqalloc 221944092
+deqalloc 221971761
+deqalloc 222077512
+deqalloc 219701390
+deqalloc 219190985
+mimalloc 204780117
+mimalloc 208674987
+mimalloc 209511181
+mimalloc 206886579
+mimalloc 201918099
