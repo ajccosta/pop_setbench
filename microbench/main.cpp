@@ -19,6 +19,8 @@ typedef long long test_type;
 #include <omp.h>
 #include <perftools.h>
 
+#include "memory_usage.h"
+
 #ifdef PRINT_JEMALLOC_STATS
     #include <jemalloc/jemalloc.h>
     #define DEBUG_PRINT_ARENA_STATS malloc_stats_print(printCallback, NULL, "ag")
@@ -1078,6 +1080,7 @@ void printOutput(auto g) {
         COUTATOMIC("update_throughput="<<throughputUpdates<<std::endl);
         COUTATOMIC("query_throughput="<<throughputQueries<<std::endl);
         COUTATOMIC("total_throughput="<<throughputAll<<std::endl);
+        COUTATOMIC("memory_usage(mib)="<<getMemoryUsageBytes()/(1024*1024)<<std::endl);
         COUTATOMIC(std::endl);
 
         COUTATOMIC(std::endl);
