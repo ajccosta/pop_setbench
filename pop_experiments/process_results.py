@@ -20,7 +20,7 @@ def parse_and_average(filename):
             if not line or line.startswith('#'):
                 continue
             # Benchmark header (no space, no digit at start)
-            if not line[0].isdigit() and ' ' not in line:
+            if not line[0].isdigit() and '.' in line:
                 current_benchmark = line
                 continue
             # Skip if benchmark not yet set
@@ -35,6 +35,7 @@ def parse_and_average(filename):
                 allocators.append(system)
             results[current_benchmark][system].append(int(val))
 
+    overall_improvement=0
     # Print results
     result_comparison = {}
     for benchmark, systems in results.items():
@@ -44,6 +45,7 @@ def parse_and_average(filename):
         best_avg = 0
         for system in allocators:
             values = systems.get(system, [])
+            print(values)
             if not values:
                 continue
             avg = sum(values) // len(values)
@@ -53,8 +55,11 @@ def parse_and_average(filename):
                 best_other_system = system
                 best_avg = avg
         improvement=round(((result_comparison[benchmark]['deqalloc'])/(result_comparison[benchmark][best_other_system])-1)*100,5)
+        overall_improvement+=improvement
         print(f"  improvement over best other system ({best_other_system}): {improvement}%")
         print()
+
+    print(f"Overall improvement: {overall_improvement/len(result_comparison.keys())}%")
 
 # Example usage
 parse_and_average(sys.argv[1])
